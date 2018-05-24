@@ -12,6 +12,9 @@ namespace ns3 {
 #include <list>
 #include <vector>
 #include <deque>
+#include <iostream>
+#include <set>
+#include <boost/range/irange.hpp>
 
 
 template<class nodeType>
