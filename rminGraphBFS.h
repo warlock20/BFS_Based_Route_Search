@@ -18,15 +18,14 @@ namespace ns3 {
 
 
 template<class nodeType>
-class rminGraph {
+class rminGraph{
 private:
 
     std::vector<std::vector<int> > edge; //Total edges
     std::vector<unsigned char> visited; // Check whether its visited or not
 
 public:
-    rminGraph(nodeType graphSize);
-
+    rminGraph(int graphSize);
     rminGraph(const rminGraph &) = default;
 
     virtual ~rminGraph() = default;

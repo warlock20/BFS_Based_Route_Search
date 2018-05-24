@@ -11,7 +11,7 @@ namespace ns3 {
 #include "rminGraphBFS.h"
 
 template<class nodeType>
-rminGraph<nodeType>::rminGraph(nodeType graphSize)  {
+rminGraph<nodeType>::rminGraph(int graphSize)  {
     edge.resize(graphSize);
     visited.resize(graphSize);
 }
@@ -50,29 +50,7 @@ void rminGraph<nodeType>::searchRoute(nodeType v, int level) {
         }
         currentLevel++;
     }
-
-    /*
-    for (auto i:visited) i = false;
-    std::list<nodeType> q;
-    visited[v] = true;
-
-    q.push_back(v);
-
-    while (!q.empty())
-    {
-        v = q.front();
-        std::cout<<v<<" ";
-        q.pop_front();
-        for(auto i : edge[v])
-        {
-            if(!visited[i])
-            {
-                visited[i] = true;
-                q.push_back(i);
-            }
-        }
-    }*/
-
+    //print the routes for testing
 }
 
 
